@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="login" alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <TabPane prefHeight="300.0" prefWidth="301.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab closable="false" text="Customer">
+            <content>
+              <AnchorPane fx:id="customertab" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="logincustomer" layoutX="81.0" layoutY="189.0" mnemonicParsing="false" onAction="#customerlogin" text="Login" />
+                        <Button fx:id="clearc" layoutX="187.0" layoutY="189.0" mnemonicParsing="false" onAction="#clear" text="Clear" />
+                        <TextField fx:id="usernamecustomer" layoutX="81.0" layoutY="83.0" promptText="username" />
+                        <PasswordField fx:id="passwordcustomer" layoutX="81.0" layoutY="129.0" promptText="password" />
+                        <Label layoutX="14.0" layoutY="87.0" text="Username:" />
+                        <Label layoutX="16.0" layoutY="133.0" text="Password:" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="managertab" closable="false" text="Manager">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="loginmanager" layoutX="81.0" layoutY="191.0" mnemonicParsing="false" onAction="#managerlogin" text="Login" />
+                        <Button fx:id="clearm" layoutX="187.0" layoutY="191.0" mnemonicParsing="false" onAction="#clear" text="Clear" />
+                        <TextField fx:id="usernamemanager" layoutX="81.0" layoutY="89.0" promptText="username" />
+                        <PasswordField fx:id="passwordmanager" layoutX="81.0" layoutY="129.0" promptText="password" />
+                        <Label layoutX="15.0" layoutY="93.0" text="Username:" />
+                        <Label layoutX="17.0" layoutY="133.0" text="Password:" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="drivertab" closable="false" text="Driver">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="logindriver" layoutX="81.0" layoutY="186.0" mnemonicParsing="false" onAction="#driverlogin" text="Login" />
+                        <Button fx:id="cleard" layoutX="187.0" layoutY="186.0" mnemonicParsing="false" onAction="#clear" text="Clear" />
+                        <TextField fx:id="usernamedriver" layoutX="81.0" layoutY="87.0" promptText="username" />
+                        <PasswordField fx:id="passworddriver" layoutX="81.0" layoutY="133.0" promptText="password" />
+                        <Label layoutX="13.0" layoutY="91.0" text="Username:" />
+                        <Label layoutX="15.0" layoutY="137.0" text="Password:" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</GridPane>
